@@ -2,9 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  distDir: "docs",
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: "export",
   turbopack: {
     rules: {
       "*.css": {
