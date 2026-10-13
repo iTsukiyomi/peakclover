@@ -29,7 +29,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     image: "/my-discovery-asta.png",
     badge: "Anti-Magic",
     colSpan: "lg:col-span-7",
-    heightClass: "h-[480px] md:h-[560px]",
+    heightClass: "aspect-[16/10]",
     tiltAngle: -1.2,
   },
   {
@@ -42,7 +42,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     image: "/my-discovery-yuno.jpg",
     badge: "Wind Magic",
     colSpan: "lg:col-span-5",
-    heightClass: "h-[440px] md:h-[500px]",
+    heightClass: "aspect-[16/11]",
     tiltAngle: 1.4,
   },
   {
@@ -55,7 +55,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     image: "/my-discovery-noelle.jpg",
     badge: "Water Magic",
     colSpan: "lg:col-span-5",
-    heightClass: "h-[460px] md:h-[540px]",
+    heightClass: "aspect-[16/11]",
     tiltAngle: -1.6,
   },
   {
@@ -68,7 +68,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     image: "/my-discovery-yami.webp",
     badge: "Dark Magic",
     colSpan: "lg:col-span-7",
-    heightClass: "h-[500px] md:h-[580px]",
+    heightClass: "aspect-[16/10]",
     tiltAngle: 1.1,
   },
 ];
@@ -150,6 +150,8 @@ export default function DiscoverySection() {
                     src={item.image}
                     alt={item.name}
                     fill
+                    quality={100}
+                    unoptimized
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   />

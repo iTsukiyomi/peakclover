@@ -243,6 +243,8 @@ export default function StoryScrollSection() {
               alt="Black Clover Story"
               fill
               priority
+              quality={100}
+              unoptimized
               sizes="100vw"
               className="object-cover object-center select-none"
             />

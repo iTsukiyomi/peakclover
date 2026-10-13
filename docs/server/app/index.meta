@@ -1,7 +1,7 @@
 {
   "status": 200,
   "headers": {
-    "link": "</_next/static/media/c91de1963421a97e-s.p.3m6oexal_is66.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/cc014fcb166cf364-s.p.2cu9iw-l3ih8o.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e8f2fbee2754df70-s.p.1dqa_6e_ad4sj.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/ea1df765ed99ddf9-s.p.02nvq2zrhh7ok.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\"",
+    "link": "</_next/static/media/c91de1963421a97e-s.p.3m6oexal_is66.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/cc014fcb166cf364-s.p.2cu9iw-l3ih8o.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/e8f2fbee2754df70-s.p.1dqa_6e_ad4sj.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </_next/static/media/ea1df765ed99ddf9-s.p.02nvq2zrhh7ok.woff2>; rel=preload; as=\"font\"; crossorigin=\"\"; type=\"font/woff2\", </my-new-story.png>; rel=preload; as=\"image\"",
     "x-nextjs-stale-time": "300",
     "x-nextjs-prerender": "1",
     "x-next-cache-tags": "_N_T_/layout,_N_T_/page,_N_T_/,_N_T_/index"
