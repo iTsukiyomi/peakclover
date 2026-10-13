@@ -26,7 +26,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     code: "01",
     description:
       "Born without a single drop of magic in a world where magic is everything. He trained his body until he could swing massive iron swords, eventually receiving the 5-leaf grimoire that can cut down and deflect any spell.",
-    image: "/my-discovery-asta.png",
+    image: "/peakclover/my-discovery-asta.png",
     badge: "Anti-Magic",
     colSpan: "lg:col-span-7",
     heightClass: "aspect-[16/10]",
@@ -39,7 +39,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     code: "02",
     description:
       "Asta's childhood brother and lifelong rival from Hage village. Blessed by mana itself, he earned the four-leaf clover grimoire and fights with the Wind Spirit Sylph to become the Wizard King.",
-    image: "/my-discovery-yuno.jpg",
+    image: "/peakclover/my-discovery-yuno.jpg",
     badge: "Wind Magic",
     colSpan: "lg:col-span-5",
     heightClass: "aspect-[16/11]",
@@ -52,7 +52,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     code: "03",
     description:
       "Born to royal blood but mocked for losing control of her magic. Joining Captain Yami's Black Bulls gave her a family, unlocking her incredible Valkyrie Armor in battle.",
-    image: "/my-discovery-noelle.jpg",
+    image: "/peakclover/my-discovery-noelle.jpg",
     badge: "Water Magic",
     colSpan: "lg:col-span-5",
     heightClass: "aspect-[16/11]",
@@ -65,7 +65,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     code: "04",
     description:
       "A foreigner washed ashore in the Clover Kingdom who uses rare Dark Magic infused into his katana. He took in all the outcasts and gave them one rule: surpass your limits.",
-    image: "/my-discovery-yami.webp",
+    image: "/peakclover/my-discovery-yami.webp",
     badge: "Dark Magic",
     colSpan: "lg:col-span-7",
     heightClass: "aspect-[16/10]",

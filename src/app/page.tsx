@@ -112,10 +112,11 @@ export default function Home() {
         {/* Base artwork im1 (night scene) filling the background */}
         <div className="absolute inset-0">
           <Image
-            src="/im1.png"
+            src="/peakclover/im1.png"
             alt="Hero Background"
             fill
             priority
+            unoptimized
             sizes="100vw"
             className="object-cover object-center"
           />
@@ -152,10 +153,11 @@ export default function Home() {
         style={maskStyle}
       >
         <Image
-          src="/im2.png"
+          src="/peakclover/im2.png"
           alt="Day Reveal"
           fill
           priority
+          unoptimized
           sizes="100vw"
           className="object-cover object-center"
         />

@@ -239,7 +239,7 @@ export default function StoryScrollSection() {
             }}
           >
             <Image
-              src="/my-new-story.png"
+              src="/peakclover/my-new-story.png"
               alt="Black Clover Story"
               fill
               priority
