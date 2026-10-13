@@ -65,7 +65,7 @@ const ARCHIVE_ITEMS: ArchiveCard[] = [
     code: "04",
     description:
       "A foreigner washed ashore in the Clover Kingdom who uses rare Dark Magic infused into his katana. He took in all the outcasts and gave them one rule: surpass your limits.",
-    image: "/im1.png",
+    image: "/my-discovery-yami.webp",
     badge: "Dark Magic",
     colSpan: "lg:col-span-7",
     heightClass: "h-[500px] md:h-[580px]",
