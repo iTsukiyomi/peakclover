@@ -1,8 +1,6 @@
-# Black Clover Tribute Website
+# Black Clover
 
-I made this website completely using Antigravity with Gemini as a fan tribute to Yuki Tabata's *Black Clover*. 
-
-I wanted something clean, dark, and cinematic that strictly tells the real story from the anime and manga—Asta being born without a single drop of magic, his rivalry and promise with Yuno from Hage village, receiving the 5-leaf grimoire, and never giving up.
+I made this website completely using Antigravity with Gemini as a fan of Yuki Tabata's *Black Clover*. 
 
 ---
 
@@ -65,36 +63,37 @@ The build output is configured to compile into the `docs/` folder.
 Here are the prompts I used while building this project with Antigravity and Gemini:
 
 1. **Initial Layout Setup**:
-   > "create a blank nextjs project in this folder. Use the attached image as the exact layout reference. Recreate the same composition, spacing, proportions, typography hierarchy, navigation, bottom text area, and CTA placement. Replace the oversized 'LAST' headline with 'BLACK CLOVER' as the dominant hero element. Use the supporting text 'Enter a world where magic comes alive' and description 'An immersive world of fearless knights, forbidden magic, and stories waiting to be discovered.' Buttons: 'Explore Black Clover →' and 'Meet the Characters →'. Remove the statue, scenery, flowers, and all artwork completely. Use a pure black #000000 background. Keep the design minimal, premium, editorial, mysterious, and fully responsive. Do not redesign the layout—only adapt the reference to BLACK CLOVER."
+   > "Use the attached image as the **exact layout reference**. Recreate the same composition, spacing, proportions, typography hierarchy, navigation, bottom text area, and CTA placement. Replace the oversized **"[TEXT]"** headline with **"BLACK CLOVER"** as the dominant hero element. Use the supporting text **"Enter a world where magic comes alive"** and description **"An immersive world of fearless knights, forbidden magic, and stories waiting to be discovered."** Buttons: **"Explore Black Clover →"** and **"Meet the Characters →"**. Remove the statue, scenery, flowers, and all artwork completely. Use a pure black **#000000** background. Keep the design minimal, premium, editorial, mysterious, and fully responsive. **Do not redesign the layout—only adapt the reference to BLACK CLOVER.**"
 
-2. **Cursor Spotlight Reveal**:
-   > "switch the im1 and im2 . rename im1 to im2 and im2 to im1"
+2. **Hover Reveal Effect**:
+   > "Assets
+   EXISTING HERO: Keep the current hero/background exactly as it is.
+   REVEAL_IMAGE: Use the attached character image exactly as provided. Do not crop, resize, recolor, edit, regenerate, or alter the character.
+   Assets are attached to the chat. Use them exactly:
+   Base image (BG_IMAGE_1)
+   Reveal image (BG_IMAGE_2)
+   ONLY ADD THIS EFFECT
+   Add a cursor-following character reveal over the existing hero.
+   When the mouse moves across the hero, reveal REVEAL_IMAGE through a soft circular spotlight centered exactly on the cursor. The character image must be completely invisible outside the spotlight.
+   Reveal radius: 260px
+   Soft feathered/glowing edge
+   Smooth cursor-following movement with slight easing/lerp
+   pointer-events: none on the reveal layer
+   Use a CSS radial-gradient mask via mask-image and -webkit-mask-image
+   Keep the reveal layer above the existing hero background but below every existing text, button, navigation, and UI element
+   When the cursor leaves the hero, hide the reveal image completely."
 
-3. **Refining Animations**:
-   > "remove the 3d model. also the scrolling and that image scaling doesnt feel smooth at all."
+3. **Scroll-driven storytelling section**:
+   > "Create the next section directly after the existing BLACK CLOVER hero section. Do not modify the hero. Build a cinematic scroll-driven storytelling section on a pure black background. Place the attached image exactly in the center at a vertical 9:16 portrait ratio with a relatively small initial size and generous negative space around it. As the user scrolls down, smoothly scale the image from its initial portrait size until it progressively expands beyond its container and finally becomes a full-screen image, automatically adapting to desktop, tablet, and mobile viewport dimensions while preserving the image composition and focal point. Surround the initial image with multiple short informational text elements positioned in an intentionally asymmetric, editorial "organized chaos" arrangement—different font sizes, weights, shapes, rotations, and subtle accent colors, but still refined and cohesive with BLACK CLOVER's premium visual identity. As the image grows during scrolling, animate these text elements out with elegant staggered fades, slides, rotations, and scale transitions, so the information gradually disappears and the image becomes the sole focus. Use smooth scroll-linked animations, cinematic pacing, subtle parallax, and seamless transitions. The final state should be completely immersive: the image fills the entire viewport with no distracting UI. Make the section feel like an interactive digital art exhibition and a discovery moment within the BLACK CLOVER world, not a conventional website image section. Fully responsive across desktop, tablet, and mobile."
 
-4. **Cleaning Hero & Tuning Scale**:
-   > "firstly, remove the 'scroll to story' from the bottom right of main landing page. also now the image isnt scaling at all unlike previously it scaled perfectly it just wasnt very smooth"
-
-5. **Adding Discovery & Footer Sections**:
+4. **Adding Discovery & Footer Sections**:
    > "Create the next section directly after the existing immersive scroll-image section. Do not modify any previous sections. Create a highly creative 'BLACK CLOVER DISCOVERY' section that feels like an interactive digital archive of an unexplored world. Use a deep black background with large elegant typography reading 'DISCOVER BLACK CLOVER' and a short introduction about exploring mysterious characters and places. Below it, create an asymmetric editorial grid of 4–6 character/world cards with different sizes and positions rather than a conventional uniform grid. Each card should contain an image, character/place name, small category label, and a short mysterious description. Add subtle hover interactions: images slightly zoom, cards shift or rotate by a few degrees, typography reacts, and small details appear. Introduce a few oversized floating words and tiny metadata labels around the composition to create the feeling of a curated scientific field journal mixed with a futuristic art exhibition. As the user scrolls into the section, cards should reveal with smooth staggered animations, subtle parallax, opacity and scale transitions. Keep the design sophisticated, cinematic, mysterious and premium — never childish or game-like. Use restrained accent colors inspired by fantasy nature, while keeping black and typography dominant. End the section with a strong centered CTA: 'ENTER THE WORLD →'. Then transition seamlessly into a large, visually striking BLACK CLOVER footer. Make the footer minimal but memorable: oversized BLACK CLOVER typography, navigation links, social links, a short brand statement, and a small copyright line. Use an elegant oversized typographic layout with generous negative space. The footer should feel like the final page of an art book rather than a standard website footer. Fully responsive across desktop, tablet and mobile, with all animations adapting smoothly to touch devices."
 
-6. **Images & Anime Lore Rules**:
-   > "for the images in the discovery section, you may do research and download and use whatever images you like, and for the text keep it related to black clover only. And make sure nothing is copy righted i will put this on my github"  
-   > "do not use ai generated images at all. You must find them on google or whatever engine you like"
-
-7. **Applying Custom Images**:
-   > "ok, i downloaded new discovery and story section images i want you to apply. Use public/my-new-story.png for the story section. Use public/my-discovery-asta.png public/my-discovery-yuno.jpg public/my-discovery-noelle.jpg for the discovery images of asta yuno and noelle. Scale them properly if needed."
-
-8. **Humanizing & Build Output**:
-   > "ok, now remove all unused stuff, clean up texts, all texts should be humanized and it should only focus on the black clover real story (as in manga/anime) nothing else, dont use fancy words. Completely humanized. Then create a new repo using gh repo create public --remote=origin --source=. and then first build (make build command such that it puts them in docs/ instead of dist/ so that i can use github pages to make the website live) and then push to github and guide me how do i deploy using github pages. Make sure everything is humanized even the readme and clearly everything should be written as if me myself i had written that readme and it must mention that 'I have made this completely using antigravity with gemini' whatever stuff. No fancy words, simple humanized language. And also provide them with the prompts used in the readme"
-
-9. **Configuration Recovery**:
-   > "you removed this part from config: cacheComponents: true, partialPrefetching: true, turbopack: { rules: { '*.css': { loaders: ['@tailwindcss/turbopack'], as: '*.css' } } }"  
-   > "perfect now only make this change, when building the dir should be docs/ do not touch anything else"
 
 ---
 
 ## Disclaimer
 
-This is a non-commercial, fan-made appreciation project. *Black Clover* is created by Yuki Tabata and published by Shueisha. All related characters, names, and imagery belong to their respective creators and copyright owners.
+This is a fan-made appreciation project. *Black Clover* is created by Yuki Tabata and published by Shueisha.
+
+The website is highly inspired and the prompts are derived from @miladi-code on youtube. Really appreciate them.
